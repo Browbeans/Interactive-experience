@@ -11,37 +11,39 @@
     <header class="flex centered">
         <h1>Welcome</h1>
     </header>
-    <main class="flex centered directioncolumn">
-        <h2>
-            Hello and welcome to this interactive story, you as a user will take part of this story and influence it by typing in actions and clicking buttons. 
-        </h2>
-        <div id="generateContent" class="container flex centered">
-         
-            <h3>
-            It's a dark evening in the city of Gothenburg, you have just got of work and you are on your way home and suddenly a wild man appears! What do you do?     
-            </h3>
-            <button onclick="getValueRun()">Run away!</button>
-            <button onclick="getValueStay()">Staying and talking to the man</button>
-        </div>
+    <main class="flex centered column">
+            <h2>
+                Hello and welcome to this interactive story, you as a user will take part of this story and influence it by typing in actions and clicking buttons. 
+            </h2>
+            <div id="generateContent" class="container flex centered">
+            
+                <h3>
+                It's a dark evening in the city of Gothenburg, you have just got of work and you are on your way home and suddenly a wild man appears! What do you do?     
+                </h3>
+                <button onclick="getValueRun()">Run away!</button>
+                <button onclick="getValueStay()">Stay and talking to the man</button>
+            </div>
 
-        <div id="runAway">
-            <p>You feel your heart rasing and starting to get out of breath, the wild man is chasing you.
-               You cant run anymore and the man catches up to you, what will you do? "Punch" "Talk" or "Ignore"</p>
+            <div id="runAway">
+                <p>You feel your heart rasing and starting to get out of breath, the wild man is chasing you.
+                You cant run anymore and the man catches up to you, what will you do? "Punch" "Talk" or "Ignore"</p>
 
-            <form id="form" onsubmit="return false;">
-                <input type="text" id="PTI" />
-                <input  type="submit" onclick="othername();" />
-            </form>
-        </div>
+                <form id="runForm" onsubmit="return false;">
+                    <input type="text" id="PTI" />
+                    <input  type="submit" onclick="chosePunchTalkIgnore();">
+                </form>
+            </div>
 
-        <div id="stayHere">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis labore, 
-                nobis repudiandae laboriosam non ducimus consequuntur mollitia fugit, soluta neque perferendis temporibus sapiente, 
-                nihil praesentium harum doloremque? Beatae, sed hic?
-            </p>
-            <input type="text" name="option2" id="option2">
-        </div>
+            <div id="stayHere">
+                <p>
+                    The man start to talk about Jehovas Witness, and claiming that you are on of the
+                    chosen ones to take part of their wisdom.
+                </p>
+                <form id="stayForm" onsubmit="return false;">
+                    <input type="text" id="getBrochureOrSign" />
+                    <input  type="submit" onclick="chosePunchTalkIgnore();" />
+                </form>
+            </div>
     </main>
 </body>
 </html>

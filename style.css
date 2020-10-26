@@ -7,7 +7,7 @@ body {
     display: flex;
 }
 
-.directioncolumn {
+.column {
     flex-direction: column;
 }
 .centered {
@@ -22,6 +22,7 @@ header {
     background: black;
     color: white;
 }
+
 
 h1 {
     margin: 0;
