@@ -23,13 +23,23 @@
             <button onclick="getValueRun()">Run away!</button>
             <button onclick="getValueStay()">Staying and talking to the man</button>
         </div>
+
         <div id="runAway">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis labore, nobis repudiandae laboriosam non ducimus consequuntur mollitia fugit, soluta neque perferendis temporibus sapiente, nihil praesentium harum doloremque? Beatae, sed hic?</p>
-            <input type="text" name="option1" id="option1">
+            <p>You feel your heart rasing and starting to get out of breath, the wild man is chasing you.
+               You cant run anymore and the man catches up to you, what will you do? "Punch" "Talk" or "Ignore"</p>
+
+            <form id="form" onsubmit="return false;">
+                <input type="text" id="PTI" />
+                <input  type="submit" onclick="othername();" />
+            </form>
         </div>
 
         <div id="stayHere">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis labore, nobis repudiandae laboriosam non ducimus consequuntur mollitia fugit, soluta neque perferendis temporibus sapiente, nihil praesentium harum doloremque? Beatae, sed hic?</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis labore, 
+                nobis repudiandae laboriosam non ducimus consequuntur mollitia fugit, soluta neque perferendis temporibus sapiente, 
+                nihil praesentium harum doloremque? Beatae, sed hic?
+            </p>
             <input type="text" name="option2" id="option2">
         </div>
     </main>
