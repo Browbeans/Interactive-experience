@@ -1,6 +1,6 @@
 
 function getValueStay() {
-    var run = document.getElementById("runAway");
+    var run = document.getElementById("stayHere");
     if(run.style.display == 'block')
        run.style.display = 'none';
     else
