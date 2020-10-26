@@ -17,18 +17,21 @@ function getValueRun() {
        run.style.display = 'block';
  }
 
-let valuesPTI = ["Punch", "Talk", "Ignore"]
+let valuesPTI = ["PUNCH", "TALK", "IGNORE"]
 
-let i = 0;
-
-function othername() {
+function chosePunchTalkIgnore() {
     let input = document.getElementById("PTI").value;
-    
-    if(valuesPTI.includes(input)){
-        alert(input)
+    if (input.toUpperCase() == valuesPTI[0]){     
+        
+    }
+    else if (input.toUpperCase() == valuesPTI[1]){     
+        console.log(input)
+    }
+    else if (input.toUpperCase() == valuesPTI[2]){     
+        console.log(input)
     }
     else {
-        alert("wrong value")
+        alert("Please chose punch, talk or ignore")
     }
 }
  
