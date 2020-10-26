@@ -33,6 +33,20 @@ h1 {
     flex-direction: column;
 }
 
+main div {
+    width: 40%;
+    border: 0.125rem solid black;
+    margin: 1rem;
+}
+
+main h3, p, input{
+    margin: 1rem;
+}
+button {
+    margin: 0.5rem;
+    width: 15rem;
+}
+
 #runAway {
     display: block;
     display: none;
