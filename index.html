@@ -24,11 +24,11 @@
                 <button onclick="getValueStay()">Stay and talking to the man</button>
             </div>
 
-            <div id="runAway">
+            <div class ="hidden" id="runAway">
                 <p>You feel your heart rasing and starting to get out of breath, the wild man is chasing you.
                 You cant run anymore and the man catches up to you. 
                 <br>
-                What will you do? "Punch" "Talk" or "Ignore"</p>
+                What will you do? Punch, Talk or Ignore</p>
 
                 <form id="runForm" onsubmit="return false;">
                     <input type="text" id="PTI" />
@@ -36,18 +36,57 @@
                 </form>
             </div>
 
-            <div id="stayHere">
+            <div class="hidden" id="stayHere">
                 <p>
-                    The man start to talk about Jehovas Witness, and claiming that you are on of the
+                    The man start to talk about the church of Scientology, and claiming that you are on of the
                     chosen ones to take part of their wisdom. The man suggests that you should sign a list with your contact information or you can take a Brochure. 
                     <br>
                     What do you chose to do?
                 </p>
                 <form id="stayForm" onsubmit="return false;">
                     <input type="text" id="getBrochureOrSign" />
-                    <input  type="submit" onclick="chosePunchTalkIgnore();" />
+                    <input  type="submit" onclick="choseBrochureSign();">
                 </form>
             </div>
+
+            <div class="hidden" id="actionBrochure">
+                <p>
+                    The man says - Here You go, hope that you enjoy the reading and that I soon will see you on a meeting, or else ill hunt you down!!
+                </p>
+            </div>
+            
+            <div class="hidden" id="actionSign">
+                <p>
+                    The man says - Very nice choice my brother here you go, you need to fill in all the fields. 
+                </p>
+                <form id="signForm" onsubmit="return false;">
+                    <input type="text" id="signingForm">
+                    <input  type="submit" onclick="validateForm();">
+                </form>
+                
+            </div>
+
+            <div class="hidden" id="actionPunch">
+                <p> 
+                    You hit the man right in the face, he falls to the grown and you hear a siren go off right behind you,
+                    you turn around and see two police officers walking towards you. To your suprise they thank you for striking down a wanted murderer and arrest the man.
+                    You start thinking about the whole situation and keep strolling home. 
+                </p>
+            </div>
+
+            <div class="hidden" id="actionTalk"></div>
+
+        <div class="hidden" id="actionIgnore">
+            <p>
+                The man is getting more and more frustrated and start shouting at you and suddenly he pulls a knife on you. 
+                <br>
+                <form id="ignoreForm" onsubmit="return false;">
+                    <input type="text" id="fightOrDie" />
+                    <input  type="submit" onclick="choseFightOrDie();" />
+                </form>
+
+            </p>
+        </div>
     </main>
 </body>
 </html>
