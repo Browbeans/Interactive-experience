@@ -15,6 +15,11 @@ body {
     justify-content: center;
 }
 
+.hidden {
+    display: block;
+    display: none;
+}
+
 /* Specific element classes */
 header {
     width: 100%;
@@ -47,12 +52,3 @@ button {
     width: 15rem;
 }
 
-#runAway {
-    display: block;
-    display: none;
-} 
-
-#stayHere {
-    display: block;
-    display: none;
-}
