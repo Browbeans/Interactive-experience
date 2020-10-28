@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    background-image: url('https://goteborgco.se/wp-content/uploads/2019/12/utsikt-167-11-2048x948.jpg');
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /* General css-classes */
@@ -33,6 +37,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: white;
+}
+
 .container {
     margin: 2rem 0;
     flex-direction: column;
@@ -42,6 +50,7 @@ main div {
     width: 40%;
     border: 0.125rem solid black;
     margin: 1rem;
+    background-color: white;
 }
 
 main h3, p, input, label{
@@ -55,6 +64,13 @@ label {
 button {
     margin: 1rem;
     width: 15rem;
+    border-radius: 2rem;
+    outline: none;
+}
+
+input {
+    border-radius: 2rem;
+    outline: none;
 }
 
 input:valid {
