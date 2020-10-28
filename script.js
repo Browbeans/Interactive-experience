@@ -76,13 +76,24 @@ function chosePunchTalkIgnore() {
     }
 }
 
-function restartYes() {
-    location.reload();
+function pickUpStick() {
+    let pickStick = document.getElementById("fightWithStick")
+    if(pickStick.style.display == 'block')
+        pickStick.style.display = 'none'
+    else
+        pickStick.style.display = 'block'
+}
+
+function ignoreStick() {
+    let ignorestick = document.getElementById("noStick")
+    if(ignorestick.style.display == 'block')
+        ignorestick.style.display = 'none'
+    else
+        ignorestick.style.display = 'block'
 }
 
 
-// let noRestart = document.getElementById("resartNO")
-// noRestart.onclick() =  function endPage() {
-//     document.querySelector 
-// }
+function restartYes() {
+    location.reload();
+}
 
