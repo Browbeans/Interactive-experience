@@ -53,6 +53,8 @@
                 <p>
                     The man says - Here You go, hope that you enjoy the reading and that I soon will see you on a meeting, or else ill hunt you down!!
                     <br>
+                    The end!
+                    <br>
                     Would you like to play again? 
                     <br>
                 </p>
@@ -91,9 +93,13 @@
                     We will summon to our next meeting you via telepathy and give specific tasks, enjoy the rest of your evenening.
                     <br> 
                     You start thinking about the whole thing and feel some excitment about this, you keep strolling home. 
-                </p>
-                <button onclick="restartYes()">YES</button>
-                <button id="restartNo">NO</button>
+                    The end!
+                    <br>
+                    Would you like to play again? 
+                    <br>
+                </p>    
+                    <button onclick="restartYes()">YES</button>
+                    <button id="restartNo">NO</button>
             </div>
 
             <div class="hidden" id="actionPunch">
@@ -101,6 +107,8 @@
                     You hit the man right in the face, he falls to the grown and you hear a siren go off right behind you,
                     you turn around and see two police officers walking towards you. To your suprise they thank you for striking down a wanted murderer and arrest the man.
                     You start thinking about the whole situation and keep strolling home. 
+                    <br>
+                    The end!
                     <br>
                     Would you like to play again? 
                     <br>
@@ -113,14 +121,38 @@
 
         <div class="hidden" id="actionIgnore">
             <p>
-                The man is getting more and more frustrated and start shouting at you and suddenly he pulls a knife on you. 
+                The man is getting more and more frustrated and start shouting at you and suddenly he pulls a knife on you.
+                You see a stick on the ground 
                 <br>
-                <form id="ignoreForm" onsubmit="return false;">
-                    <input type="text" id="fightOrDie" />
-                    <input  type="submit" onclick="choseFightOrDie();" />
-                </form>
-
             </p>
+            <button id="pickup" onclick="pickUpStick()">Pick up stick</button>
+            <button id="ignorestick" onclick="ignoreStick()">Ignore stick</button>
+        </div>
+
+        <div class="hidden" id="fightWithStick">    
+            <p>
+                You picked up the stick, the fight intensifies, he tries to stab you but you dodged his knife and stroke right in the head with the stick.
+                The man passes out and you call the police who arrives in 2 minutes and let you give your testimony. They ask if you are okay and then lets you go. 
+                <br> 
+                The end!
+            </p>
+            <button onclick="restartYes()">YES</button>
+            <button id="restartNo">NO</button>
+        </div>
+
+        <div class="hidden" id="noStick">
+            <p>
+                You choose poorly, the man has a big advantage over you with his knife. It's an epic battle for life and death you get stabbed in the arm. 
+                The odds isnt in your favor but SUDDENLY a wild Legionaire with doombringer shows up and strike the man with his axe and the man dies. 
+                You and Legionaire walks to burger king and get a couple of burgers then part your ways. 
+                <br>
+                The end!
+                <br>
+                Would you like to play again? 
+                <br>
+            </p>    
+            <button onclick="restartYes()">YES</button>
+            <button id="restartNo">NO</button>
         </div>
     </main>
 </body>
