@@ -31,7 +31,7 @@
                 What will you do? Punch, Talk or Ignore</p>
 
                 <form id="runForm" onsubmit="return false;">
-                    <input type="text" id="PTI" />
+                    <input type="text" placeholder="Punch, talk or ignore" id="PTI" />
                     <input  type="submit" onclick="chosePunchTalkIgnore();">
                 </form>
             </div>
@@ -44,7 +44,7 @@
                     What do you chose to do?
                 </p>
                 <form id="stayForm" onsubmit="return false;">
-                    <input type="text" id="getBrochureOrSign" />
+                    <input type="text" placeholder="Brochure or sign" id="getBrochureOrSign" />
                     <input  type="submit" onclick="choseBrochureSign();">
                 </form>
             </div>
@@ -54,16 +54,29 @@
                     The man says - Here You go, hope that you enjoy the reading and that I soon will see you on a meeting, or else ill hunt you down!!
                 </p>
             </div>
-            
+
             <div class="hidden" id="actionSign">
                 <p>
                     The man says - Very nice choice my brother here you go, you need to fill in all the fields. 
                 </p>
                 <form id="signForm" onsubmit="return false;">
-                    <input type="text" id="signingForm">
+                    <label for="Firstame">Firstname</label> 
+                    <br>
+                    <input required type="text" name="Firstame" id="fName">
+                    <br>
+                    <label for="Lastname">Lastname</label>
+                    <br>
+                    <input required type="text" name="Lastname" id="LName">
+                    <br>
+                    <label for="email">Email-adress</label>
+                    <br>
+                    <input required type="email" name="email" id="emailName">
+                    <br>
+                    <label for="number">Your lucky number</label>
+                    <br>
+                    <input required type="number" name="luckynumber" id="luckyNumber">
                     <input  type="submit" onclick="validateForm();">
                 </form>
-                
             </div>
 
             <div class="hidden" id="actionPunch">
@@ -71,6 +84,11 @@
                     You hit the man right in the face, he falls to the grown and you hear a siren go off right behind you,
                     you turn around and see two police officers walking towards you. To your suprise they thank you for striking down a wanted murderer and arrest the man.
                     You start thinking about the whole situation and keep strolling home. 
+                    <br>
+                    Would you like to play again? 
+                    <br>
+                    <button onclick="restartYes()">YES</button>
+                    <button id="restartNo" onclick="restartNo()">NO</button>
                 </p>
             </div>
 
