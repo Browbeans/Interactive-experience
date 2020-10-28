@@ -52,7 +52,12 @@
             <div class="hidden" id="actionBrochure">
                 <p>
                     The man says - Here You go, hope that you enjoy the reading and that I soon will see you on a meeting, or else ill hunt you down!!
+                    <br>
+                    Would you like to play again? 
+                    <br>
                 </p>
+                <button onclick="restartYes()">YES</button>
+                <button id="restartNo">NO</button>
             </div>
 
             <div class="hidden" id="actionSign">
@@ -79,6 +84,18 @@
                 </form>
             </div>
 
+            <div class="hidden" id="formValidated">
+                <p>
+                    The man says:
+                    - Welcome to your new life, you will feel the power of Scientology very soon. 
+                    We will summon to our next meeting you via telepathy and give specific tasks, enjoy the rest of your evenening.
+                    <br> 
+                    You start thinking about the whole thing and feel some excitment about this, you keep strolling home. 
+                </p>
+                <button onclick="restartYes()">YES</button>
+                <button id="restartNo">NO</button>
+            </div>
+
             <div class="hidden" id="actionPunch">
                 <p> 
                     You hit the man right in the face, he falls to the grown and you hear a siren go off right behind you,
@@ -87,9 +104,9 @@
                     <br>
                     Would you like to play again? 
                     <br>
+                </p>    
                     <button onclick="restartYes()">YES</button>
-                    <button id="restartNo" onclick="restartNo()">NO</button>
-                </p>
+                    <button id="restartNo">NO</button>
             </div>
 
             <div class="hidden" id="actionTalk"></div>
