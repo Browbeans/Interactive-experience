@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="flex centered">
@@ -18,7 +19,9 @@
             <div id="generateContent" class="container flex centered">
             
                 <h3>
-                It's a dark evening in the city of Gothenburg, you have just got of work and you are on your way home and suddenly a wild man appears! What do you do?     
+                It's a dark evening in the city of Gothenburg, you have just got of work and you are on your way home and suddenly a wild man appears!
+                <br> 
+                What do you do?     
                 </h3>
                 <button onclick="getValueRun()">Run away!</button>
                 <button onclick="getValueStay()">Stay and talking to the man</button>
@@ -55,11 +58,9 @@
                     <br>
                     The end!
                     <br>
-                    Would you like to play again? 
-                    <br>
                 </p>
-                <button onclick="restartYes()">YES</button>
-                <button id="restartNo">NO</button>
+                <button onclick="restartYes()">Play again</button>
+                
             </div>
 
             <div class="hidden" id="actionSign">
@@ -95,11 +96,8 @@
                     You start thinking about the whole thing and feel some excitment about this, you keep strolling home. 
                     The end!
                     <br>
-                    Would you like to play again? 
-                    <br>
                 </p>    
-                    <button onclick="restartYes()">YES</button>
-                    <button id="restartNo">NO</button>
+                <button onclick="restartYes()">Play again</button>
             </div>
 
             <div class="hidden" id="actionPunch">
@@ -110,11 +108,9 @@
                     <br>
                     The end!
                     <br>
-                    Would you like to play again? 
-                    <br>
                 </p>    
-                    <button onclick="restartYes()">YES</button>
-                    <button id="restartNo">NO</button>
+                <button onclick="restartYes()">Play again</button>
+                
             </div>
 
             <div class="hidden" id="actionTalk"></div>
@@ -136,8 +132,7 @@
                 <br> 
                 The end!
             </p>
-            <button onclick="restartYes()">YES</button>
-            <button id="restartNo">NO</button>
+            <button onclick="restartYes()">Play again</button>   
         </div>
 
         <div class="hidden" id="noStick">
@@ -148,11 +143,8 @@
                 <br>
                 The end!
                 <br>
-                Would you like to play again? 
-                <br>
             </p>    
-            <button onclick="restartYes()">YES</button>
-            <button id="restartNo">NO</button>
+            <button onclick="restartYes()">Play again</button>
         </div>
     </main>
 </body>
