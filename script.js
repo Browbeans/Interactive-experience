@@ -1,7 +1,5 @@
 /**
  * Will display "stay here div" based on users input
- * @if toggle between display and hide the div
- * @else toggle between display and hide the div
  */
 function getValueStay() {
     let stay = document.getElementById("stayHere");
@@ -12,14 +10,12 @@ function getValueStay() {
  }
 
 /**
- * array of choices that the users has
+ * Array of choices that the users has
  */ 
 let valuesBrochureSign = ["BROCHURE", "SIGN"]
 
 /**
  * Will display one div based on users choice either "actionBrochure", "actionSign" or display a wrong message if user types in invalid value.  
- * @if compares users value to the array "valuesBrochureSign" and display selected div, and toggle between display and hide the div
- * @else toggle between display and hide the div
  */
 function choseBrochureSign() {
     let choice = document.getElementById("getBrochureOrSign").value;
@@ -44,9 +40,7 @@ function choseBrochureSign() {
 }
 
 /**
- * Will display the div called "formValidated"
- * @if toggle between display and hide the div
- * @else toggle between display and hide the div
+ * Will display the div called "formValidated" if the user chooses to sign the form
  */
 function validateForm(){
     let stay = document.getElementById("formValidated");
@@ -57,9 +51,7 @@ function validateForm(){
 }
 
 /**
- * Will display the div called "runAway"
- * @if toggle between display and hide the div
- * @else toggle between display and hide the div
+ * Will display the div called "runAway" where the users have 3 choices
  */
 function getValueRun() {
     var run = document.getElementById("runAway");
@@ -77,8 +69,6 @@ let valuesPTI = ["PUNCH", "TALK", "IGNORE"]
 
 /**
  * Will display one of 3 divs "actionPunch", "stayHere", "actionIgnore" or display a wrong message if user types in invalid value based on the users selection
- * @if compares users value to the array "valuesBrochureSign" and display selected div, and toggle between display and hide the div
- * @else toggle between display and hide the div
  */
 function chosePunchTalkIgnore() {
     let input = document.getElementById("PTI").value;
@@ -113,8 +103,6 @@ function chosePunchTalkIgnore() {
 
 /**
  * Displays a div based on if user chooses pick up the stick
- * @if toggle between display and hide the div
- * @else toggle between display and hide the div
  */
 function pickUpStick() {
     let pickStick = document.getElementById("fightWithStick")
@@ -127,8 +115,6 @@ function pickUpStick() {
 
 /**
  * Displays a div based on if user chooses not to pick up the stick
- * @if toggle between display and hide the div
- * @else toggle between display and hide the div
  */
 function ignoreStick() {
     let ignorestick = document.getElementById("noStick")
@@ -137,6 +123,9 @@ function ignoreStick() {
     else
         ignorestick.style.display = 'block'
 }
+
+let stageIndex = 0 
+
 
 /**
  * Function that will reload the page and start the game over
